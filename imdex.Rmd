@@ -1,0 +1,27 @@
+---
+title: "Voyant"
+author: "Soham De"
+date: "17/9/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Corpus Description
+
+2 main corpora were used in this analysis. They were:
+
+* [**LMA**] - Exhaustive Collection of all of Louisa May Alcott’s Work available on gutenberg.org including works written under the pseudonym of ‘A.M Barnard’
+
+* [**MPF**] - The Male-Pen-Female corpus, containing equal number of texts from Male authors, Female Authors and Female authors writing under pen-names. 
+
+The MPF corpus allows us to draw broader and more generalizable conclusions about the writing styles of female authors while using pen-names, whereas the LMA corpus allows us to make more precise comparisons across an exhaustive corpus of an individual’s works. We have chosen Louisa May Alcott specifically for the said analysis, as she is one of the very few people to have published both under her real name and under the pseudonym of A.M Barnard - and we have included all her works available on Gutenberg to make an exhaustive analysis.
+
+The selection of documents in the MPF corpus wasn’t exhaustive; it was manually curated making subjective judgements. We have found famous authors writing in the same time-period (literary contemporaries) and have included the most popular works across their publications. We assume that the more popular works of the more popular authors in a time-period would be fairly representative of the general literary movement prevailing in the said period.
+
+## Summary
+<iframe style='width: 849px; height: 331px;' src='https://voyant-tools.org/tool/Summary/?corpus=9b3fd06557e98d7160b857e130ec23ff' data-external = '1'></iframe>
+
+You can see the Voyant Skin above :)
