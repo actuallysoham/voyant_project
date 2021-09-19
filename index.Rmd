@@ -98,7 +98,7 @@ The overwhelming sense that one can get by purely looking at the collocates char
 
 ### Specific words/clusters
 
-By drilling-down on the corpora, we want to look at the words which are most collocated with male and female characters and familial relations. For looking at collocations with actors, we clubbed the male characters as well as female characters of the works by men, women and authors who wrote under a pen name.
+By drilling-down on the corpora, we wanted to understand the differences in gender representation. We made 2 clusters: one with male characters, the other with female characters to look at the same. By looking at the words which are most collocated with male and female characters and familial relations, we want to comment on whether there is a difference in the way different genders are represented in terms of the roles, spaces and work assigned to them.
 
 #### Male authors’ Corpus:
 
