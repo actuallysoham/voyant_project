@@ -90,6 +90,8 @@ We find more promising results on the LMA corpus, where occurrences of establish
 ## Collocation/Correlation
 ### Corpus
 
+<iframe style='width: 849px; height: 331px;' src='https://voyant-tools.org/tool/CorpusCollocates/?query=said&query=mr&query=man&query=little&query=like&query=time&query=know&query=good&query=come&query=old&corpus=e9fa4cf93a6ccc176841f143d679487e' data-external = '1'></iframe>
+
 Looking at the collocates chart for the entire corpora containing male authors and female authors writing under both real names and pseudonyms, the words which dominate the count are : *mr*, *man*, several *male character names*, with a sprinkling of *female characters*. Among familial relations, *father* shows up first in the collocate count followed by *mother*. Looking further across the chart it is generally seen that the word *little* is often collocated with *child*, *girl* and some *female characters* (for eg. *little marie*), however only rarely for male characters except for phrases like *little man*.  
 
 The overwhelming sense that one can get by purely looking at the collocates chart is of a patriarchal society, and largely that of a space dominated by men. Juxtaposing words like *little* with *girl* and other female characters lends a patronising and condescending tone to them, while also reaffirming that the tone of the corpora, which represents mid-19th century literature, as one dominated by the male narrative.
