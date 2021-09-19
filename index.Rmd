@@ -36,6 +36,9 @@ The selection of documents in the MPF corpus wasn’t exhaustive; it was manuall
 
 * Across all of Louisa May Alcott’s works, the 2 books written under a penname have the **lowest words per sentence** (17 and 19 respectively). This isn’t just a marginal difference. The average words per sentence for every other book she’s written (and is available on gutenberg) is ~26
 
+<iframe style='width: 849px; height: 333px;' src='https://voyant-tools.org/tool/Summary/?corpus=432ce73d9b4d42a9a330c06e8b8e6f88'  data-external = '1'></iframe>
+
+
 ## Frequency Comparison
 ### Corpus
 
@@ -64,6 +67,14 @@ We have used frequency analysis as a way to identify broader themes/ topics accr
 ## Collocation/Correlation
 ### Corpus
 ### Specific words/clusters
+
+By drilling-down on the corpora, we want to look at the words which are most collocated with male and female characters and familial relations. For looking at collocations with actors, we clubbed the male characters as well as female characters of the works by men, women and authors who wrote under a pen name.
+
+**Men corpus characters:**
+marius|jean|valjean|defarge|stryver|raskolnikov|razumihin|queequeg|stubb|ahab|manette|sydney carton|Man|mr|boy|son|monsieur|sir|husband|brother|father*
+
+<iframe style='width: 452px; height: 342px;' src='https://voyant-tools.org/tool/CorpusCollocates/?query=marius%7Cjean%7Cvaljean%7Cdefarge%7Cstryver%7Craskolnikov%7Crazumihin%7Cqueequeg%7Cstubb%7Cahab%7Cmanette%7Csydney%20carton%7CMan%7Cmr%7Cboy%7Cson%7Cmonsieur%7Csir%7Chusband%7Cbrother%7Cfather*&corpus=648dca56526bec7d4cff7ba5e70acf85'   data-external = '1'></iframe>
+
 
 ## Third Tool
 ### Explanation, Motivation 
