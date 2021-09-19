@@ -31,6 +31,8 @@ The selection of documents in the **MPF** corpus wasn’t exhaustive; it was man
 ## Summary
 <iframe style='width: 849px; height: 331px;' src='https://voyant-tools.org/tool/Summary/?corpus=9b3fd06557e98d7160b857e130ec23ff' data-external = '1'></iframe>
 
+
+<iframe style='width: 849px; height: 333px;' src='https://voyant-tools.org/tool/Summary/?corpus=432ce73d9b4d42a9a330c06e8b8e6f88'  data-external = '1'></iframe>
 ### Some observations:
 
 * The 2 books written by Alcott under her penname (AM Barnard) have an average word length of **36680**, whereas every other book she has written under her real name has an average length of **94660** words. 
@@ -41,8 +43,6 @@ The selection of documents in the **MPF** corpus wasn’t exhaustive; it was man
 
 * Across the **MPF** corpora, we observe that texts written by male authors (in our corpus) are typically longer than their female counterparts. There is no obvious difference in vocabulary density although women tend to typically have more words per sentence than their male counterparts. Women writing under pen-names typically seem to fall in the middle of the spectrum. 
 
-
-<iframe style='width: 849px; height: 333px;' src='https://voyant-tools.org/tool/Summary/?corpus=432ce73d9b4d42a9a330c06e8b8e6f88'  data-external = '1'></iframe>
 
 
 ## Frequency Comparison
@@ -100,13 +100,14 @@ By drilling-down on the corpora, we want to look at the words which are most col
 
 #### Male authors’ Corpus:
 
-marius|jean|valjean|defarge|stryver|raskolnikov|razumihin|queequeg|stubb|ahab|manette|sydney carton|Man|mr|boy|son|monsieur|sir|husband|brother|father*
+> *marius|jean|valjean|defarge|stryver|raskolnikov|razumihin|queequeg|stubb|ahab|manette|sydney carton|Man|mr|boy|son|monsieur|sir|husband|brother|father*
 
-<iframe style='width: 452px; height: 342px;' src='https://voyant-tools.org/tool/CorpusCollocates/?query=marius%7Cjean%7Cvaljean%7Cdefarge%7Cstryver%7Craskolnikov%7Crazumihin%7Cqueequeg%7Cstubb%7Cahab%7Cmanette%7Csydney%20carton%7CMan%7Cmr%7Cboy%7Cson%7Cmonsieur%7Csir%7Chusband%7Cbrother%7Cfather*&corpus=648dca56526bec7d4cff7ba5e70acf85' data-external = '1'></iframe>
+<iframe style='width: 849px; height: 331px;' src='https://voyant-tools.org/tool/CorpusCollocates/?query=marius%7Cjean%7Cvaljean%7Cdefarge%7Cstryver%7Craskolnikov%7Crazumihin%7Cqueequeg%7Cstubb%7Cahab%7Cmanette%7Csydney%20carton%7CMan%7Cmr%7Cboy%7Cson%7Cmonsieur%7Csir%7Chusband%7Cbrother%7Cfather*&corpus=648dca56526bec7d4cff7ba5e70acf85' data-external = '1'></iframe>
 
-sonia|cosette|pross|governess|madaleine|madame|girl|woman|daughter|mrs|ms|wife|sister|mother*
+> *sonia|cosette|pross|governess|madaleine|madame|girl|woman|daughter|mrs|ms|wife|sister|mother*
 
-<iframe style='width: 452px; height: 342px;' src='https://voyant-tools.org/tool/CorpusCollocates/?query=sonia%7Ccosette%7Cpross%7Cgoverness%7Cmadaleine%7Cmadame%7Cgirl%7Cwoman%7Cdaughter%7Cmrs%7Cms%7Cwife%7Csister%7Cmother*&corpus=648dca56526bec7d4cff7ba5e70acf85' data-external = '1'></iframe>
+<iframe style='width: 849px; height: 331px;' src='https://voyant-tools.org/tool/CorpusCollocates/?query=sonia%7Ccosette%7Cpross%7Cgoverness%7Cmadaleine%7Cmadame%7Cgirl%7Cwoman%7Cdaughter%7Cmrs%7Cms%7Cwife%7Csister%7Cmother*&corpus=648dca56526bec7d4cff7ba5e70acf85' data-external = '1'></iframe>
+
 
 -The commonalities between the two clusters are that both sets of characters are at first collocated with other male characters across the corpus. For the former set of characters (male), this collocation is larger in quantity and is longer in the chart. 
 
@@ -115,65 +116,42 @@ sonia|cosette|pross|governess|madaleine|madame|girl|woman|daughter|mrs|ms|wife|s
 
 #### Pen-name authors’ corpus:
 
-Mr casaubon|mr casaubon’s|mr rochester|mr brooke|mr bulstrode|mr farebrother|mr lydgate|mr vincy|mr garth|mr ladislaw|mr hawley|mr featherstone|mr trumbull|mr brocklehurst|mr rivers|mr coventry|jean|ned|reed|germain|hemp|maurice|pierre|fred|Man|mr|boy|son|monsieur|sir|husband|brother|father*
-
-
-<iframe style='width: 452px; height: 342px;' src='https://voyant-tools.org/tool/CorpusCollocates/?query=Mr%20casaubon%7Cmr%20casaubon%E2%80%99s%7Cmr%20rochester%7Cmr%20brooke%7Cmr%20bulstrode%7Cmr%20farebrother%7Cmr%20lydgate%7Cmr%20vincy%7Cmr%20garth%7Cmr%20ladislaw%7Cmr%20hawley%7Cmr%20featherstone%7Cmr%20trumbull%7Cmr%20brocklehurst%7Cmr%20rivers%7Cmr%20coventry%7Cjean%7Cned%7Creed%7Cgermain%7Chemp%7Cmaurice%7Cpierre%7Cfred%7CMan%7Cmr%7Cboy%7Cson%7Cmonsieur%7Csir%7Chusband%7Cbrother%7Cfather*&corpus=0ec07affc33377f5316ed978860c39a7' data-external = '1'></iframe>
-
-
-Dorothea|rosamond|mrs fairfax|mrs garth’s|mrs garth|mrs cadwallader|mrs cadwallader’s|mrs casaubon|mrs casaubon’s||marie|celia|mrs bulstrode|mrs vincy|mrs lydgate|mrs waule|bella|lucia|jane|adèle|bessie| madame|girl| woman| daughter|mrs|ms|wife|sister|mother*
-
-
-
-<iframe style='width: 452px; height: 342px;' src='https://voyant-tools.org/tool/CorpusCollocates/?query=Dorothea%7Crosamond%7Cmrs%20fairfax%7Cmrs%20garth%E2%80%99s%7Cmrs%20garth%7Cmrs%20cadwallader%7Cmrs%20cadwallader%E2%80%99s%7Cmrs%20casaubon%7Cmrs%20casaubon%E2%80%99s%7C%7Cmarie%7Ccelia%7Cmrs%20bulstrode%7Cmrs%20vincy%7Cmrs%20lydgate%7Cmrs%20waule%7Cbella%7Clucia%7Cjane%7Cad%C3%A8le%7Cbessie%7C%20madame%7Cgirl%7C%20woman%7C%20daughter%7Cmrs%7Cms%7Cwife%7Csister%7Cmother*&corpus=0ec07affc33377f5316ed978860c39a7' data-external = '1'></iframe>
-
 A direct comparison of the 2 character clusters, did not yield discernible differences and didn’t add to our understanding of the difference in representation of both sets of characters (check appendix). We further narrowed down our cluster only to look at how familial relations are juxtaposed with other words in this corpus.
 
-Male familial relations:
+**Male familial relations:**
 
-father*|brother*|son*|husband*
+> *father|brother|son|husband*
 
-<iframe style='width: 452px; height: 342px;' src='https://voyant-tools.org/tool/CorpusCollocates/?query=father*%7Cbrother*%7Cson*%7Chusband*&corpus=0ec07affc33377f5316ed978860c39a7' data-external = '1'></iframe>
+<iframe style='width: 849px; height: 331px;' src='https://voyant-tools.org/tool/CorpusCollocates/?query=father*%7Cbrother*%7Cson*%7Chusband*&corpus=0ec07affc33377f5316ed978860c39a7' data-external = '1'></iframe>
 
-Female familial relations:
+**Female familial relations:**
 
-Mother*|sister*|daughter*|wife*
+> *mother|sister|daughter|wife*
 
-<iframe style='width: 452px; height: 342px;' src='https://voyant-tools.org/tool/CorpusCollocates/?query=Mother*%7Csister*%7Cdaughter*%7Cwife*&corpus=0ec07affc33377f5316ed978860c39a7' data-external = '1'></iframe>
+<iframe style='width: 849px; height: 331px;' src='https://voyant-tools.org/tool/CorpusCollocates/?query=Mother*%7Csister*%7Cdaughter*%7Cwife*&corpus=0ec07affc33377f5316ed978860c39a7' data-external = '1'></iframe>
 
 Higher collocations of the paternalistic family relations with ‘mother’ and ‘wife’ were seen, whereas for the maternalistic family relations, ‘husband’, ‘brother’ and ‘mother’ were seen. The emphasis on children and child was higher in both absolute and thus, relative terms for female characters.
 
 
-
 #### Women author’s corpus:
-
-Mr thornton|mr hale|mr darcy|mr bell|mr collins|mr bingley|mr lennox|mr bennet|mr wickham| dixon|Man|mr|boy|son|monsieur|sir|husband|brother|father*
-
-<iframe style='width: 452px; height: 343px;' src='https://voyant-tools.org/tool/CorpusCollocates/?query=Mr%20thornton%7Cmr%20hale%7Cmr%20darcy%7Cmr%20bell%7Cmr%20collins%7Cmr%20bingley%7Cmr%20lennox%7Cmr%20bennet%7Cmr%20wickham%7C%20dixon%7CMan%7Cmr%7Cboy%7Cson%7Cmonsieur%7Csir%7Chusband%7Cbrother%7Cfather*&corpus=5f0b4133133dc806c1cae945b2132d55' data-external = '1'></iframe>
-
-Mrs thornton|mrs bennet|mrs hale| mrs gardiner|margaret|edith|elizabeth|mrs shaw|minnie|castalia|princess|fairy|margery|madame|girl| woman| daughter*|mrs|ms|wife*|sister*|mother*
-
-<iframe style='width: 452px; height: 343px;' src='https://voyant-tools.org/tool/CorpusCollocates/?query=Mrs%20thornton%7Cmrs%20bennet%7Cmrs%20hale%7C%20mrs%20gardiner%7Cmargaret%7Cedith%7Celizabeth%7Cmrs%20shaw%7Cminnie%7Ccastalia%7Cprincess%7Cfairy%7Cmargery%7Cmadame%7Cgirl%7C%20woman%7C%20daughter*%7Cmrs%7Cms%7Cwife*%7Csister*%7Cmother*&corpus=5f0b4133133dc806c1cae945b2132d55' data-external = '1'></iframe>
 
 Similar to pen-name authors, character clusters were not effective in making a comparison in gender representation, and thus, we looked at the familial relations aspect.
 
-Male familial relations:
+**Male familial relations:**
 
-father*|brother*|son*|husband*
+> *father|brother|son|husband*
 
-<iframe style='width: 452px; height: 343px;' src='https://voyant-tools.org/tool/CorpusCollocates/?query=father*%7Cbrother*%7Cson*%7Chusband&corpus=5f0b4133133dc806c1cae945b2132d55' data-external = '1'></iframe>
+<iframe style='width: 849px; height: 331px;' src='https://voyant-tools.org/tool/CorpusCollocates/?query=father*%7Cbrother*%7Cson*%7Chusband&corpus=5f0b4133133dc806c1cae945b2132d55' data-external = '1'></iframe>
 
 
-Female familial relations:
+**Female familial relations:**
 
-Mother*|sister*|daughter*|wife*
+> *mother|sister|daughter|wife*
 
-<iframe style='width: 452px; height: 342px;' src='https://voyant-tools.org/tool/CorpusCollocates/?query=Mother*%7Csister*%7Cdaughter*%7Cwife*&corpus=5f0b4133133dc806c1cae945b2132d55' data-external = '1'></iframe>
+<iframe style='width: 849px; height: 331px;' src='https://voyant-tools.org/tool/CorpusCollocates/?query=Mother*%7Csister*%7Cdaughter*%7Cwife*&corpus=5f0b4133133dc806c1cae945b2132d55' data-external = '1'></iframe>
 
 
 The commonality across the two clusters is that the role of ‘mother’ is prominent. The paternalistic familial relations saw the presence of other female figures like ‘sister’. For maternalisitic familial relations, ‘brother’ was seen most overwhelmingly. The emphasis on ‘child’ and ‘children’ was found for maternalistic relations, but not for paternalistic relations. The word ‘married’ was also collocated with women, but not with men in the collocates chart.
-
-
 
 
 ## Third Tool (Mandala)
@@ -190,7 +168,7 @@ It helped our analysis as this tool makes it easy to determine relationships bet
 
 For the first Mandala, we analysed familial relationships to see how occurrences  of certain relationships differed between male authors, female authors and authors who wrote under pseudonyms (who we refer to as pen authors). Our main motivation for choosing this was to see the difference between the representation of male and female figures in all these texts. The terminology we used for all 3 mandalas was: Pen authors (P), Female authors (F) and Male authors (M)
 
-<iframe style='width: 100%; height: 800px;' src='https://voyant-tools.org/?panels=cirrus%2Creader%2Ctrends%2Csummary%2Ccontexts&corpus=ab95e8a3f33a3ea54a9380b8edbc212a' data-external = '1'></iframe>
+<iframe style='width: 100%; height: 765px;' src='https://voyant-tools.org/tool/Mandala/?query=father*%7Cfather&query=mother*%7Cmother&query=brother*%7Cbrother&query=sister*%7Csister&query=husband*%7Chusband&query=wife*%7Cwife&query=son*%7Cson&query=daughter*%7Cdaughter&corpus=0ccc0245e137d488a39d972b1cfccee0'data-external = '1'></iframe>
 
 * The mention of children (son/daughter) was much lesser for P as compared to the other two.
 
@@ -292,4 +270,25 @@ While analysing character clusters for the collocates/correlation tool, we found
 * Behind a Mask (1866)
 * The Abbot’s Ghost (1867)
 
+### (B) Character Collocates
+
+#### Pen-name authors’ corpus:
+
+> Mr casaubon|mr casaubon’s|mr rochester|mr brooke|mr bulstrode|mr farebrother|mr lydgate|mr vincy|mr garth|mr ladislaw|mr hawley|mr featherstone|mr trumbull|mr brocklehurst|mr rivers|mr coventry|jean|ned|reed|germain|hemp|maurice|pierre|fred|Man|mr|boy|son|monsieur|sir|husband|brother|father*
+
+<iframe style='width: 849px; height: 331px;' src='https://voyant-tools.org/tool/CorpusCollocates/?query=Mr%20casaubon%7Cmr%20casaubon%E2%80%99s%7Cmr%20rochester%7Cmr%20brooke%7Cmr%20bulstrode%7Cmr%20farebrother%7Cmr%20lydgate%7Cmr%20vincy%7Cmr%20garth%7Cmr%20ladislaw%7Cmr%20hawley%7Cmr%20featherstone%7Cmr%20trumbull%7Cmr%20brocklehurst%7Cmr%20rivers%7Cmr%20coventry%7Cjean%7Cned%7Creed%7Cgermain%7Chemp%7Cmaurice%7Cpierre%7Cfred%7CMan%7Cmr%7Cboy%7Cson%7Cmonsieur%7Csir%7Chusband%7Cbrother%7Cfather*&corpus=0ec07affc33377f5316ed978860c39a7' data-external = '1'></iframe>
+
+> Dorothea|rosamond|mrs fairfax|mrs garth’s|mrs garth|mrs cadwallader|mrs cadwallader’s|mrs casaubon|mrs casaubon’s||marie|celia|mrs bulstrode|mrs vincy|mrs lydgate|mrs waule|bella|lucia|jane|adèle|bessie| madame|girl| woman| daughter|mrs|ms|wife|sister|mother*
+
+<iframe style='width: 849px; height: 331px;' src='https://voyant-tools.org/tool/CorpusCollocates/?query=Dorothea%7Crosamond%7Cmrs%20fairfax%7Cmrs%20garth%E2%80%99s%7Cmrs%20garth%7Cmrs%20cadwallader%7Cmrs%20cadwallader%E2%80%99s%7Cmrs%20casaubon%7Cmrs%20casaubon%E2%80%99s%7C%7Cmarie%7Ccelia%7Cmrs%20bulstrode%7Cmrs%20vincy%7Cmrs%20lydgate%7Cmrs%20waule%7Cbella%7Clucia%7Cjane%7Cad%C3%A8le%7Cbessie%7C%20madame%7Cgirl%7C%20woman%7C%20daughter%7Cmrs%7Cms%7Cwife%7Csister%7Cmother*&corpus=0ec07affc33377f5316ed978860c39a7' data-external = '1'></iframe>
+
+#### Women author’s corpus:
+
+> Mr thornton|mr hale|mr darcy|mr bell|mr collins|mr bingley|mr lennox|mr bennet|mr wickham| dixon|Man|mr|boy|son|monsieur|sir|husband|brother|father*
+
+<iframe style='width: 849px; height: 331px;' src='https://voyant-tools.org/tool/CorpusCollocates/?query=Mr%20thornton%7Cmr%20hale%7Cmr%20darcy%7Cmr%20bell%7Cmr%20collins%7Cmr%20bingley%7Cmr%20lennox%7Cmr%20bennet%7Cmr%20wickham%7C%20dixon%7CMan%7Cmr%7Cboy%7Cson%7Cmonsieur%7Csir%7Chusband%7Cbrother%7Cfather*&corpus=5f0b4133133dc806c1cae945b2132d55' data-external = '1'></iframe>
+
+> Mrs thornton|mrs bennet|mrs hale| mrs gardiner|margaret|edith|elizabeth|mrs shaw|minnie|castalia|princess|fairy|margery|madame|girl| woman| daughter*|mrs|ms|wife*|sister*|mother*
+
+<iframe style='width: 849px; height: 331px;' src='https://voyant-tools.org/tool/CorpusCollocates/?query=Mrs%20thornton%7Cmrs%20bennet%7Cmrs%20hale%7C%20mrs%20gardiner%7Cmargaret%7Cedith%7Celizabeth%7Cmrs%20shaw%7Cminnie%7Ccastalia%7Cprincess%7Cfairy%7Cmargery%7Cmadame%7Cgirl%7C%20woman%7C%20daughter*%7Cmrs%7Cms%7Cwife*%7Csister*%7Cmother*&corpus=5f0b4133133dc806c1cae945b2132d55' data-external = '1'></iframe>
 
