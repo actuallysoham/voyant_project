@@ -1,7 +1,7 @@
 ---
-title: "Voyant"
-author: "Soham De"
-date: "17/9/2021"
+title: "Effect of Pseudonyms on Writing Styles"
+author: "Ananya Jain (GL), Ashita Kumar and Soham De"
+date: "19/9/2021"
 output: html_document
 ---
 
@@ -9,19 +9,69 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+## Research hypothesis
+
+
 ## Corpus Description
 
 2 main corpora were used in this analysis. They were:
 
-* [**LMA**] - Exhaustive Collection of all of Louisa May Alcott’s Work available on gutenberg.org including works written under the pseudonym of ‘A.M Barnard’
+* [**LMA**] - Exhaustive Collection of all of Louisa May Alcott’s Work available on <a href="http://www.gutenberg.org/" target="_blank"> Gutenberg </a> including works written under the pseudonym of ‘A.M Barnard’
 
 * [**MPF**] - The Male-Pen-Female corpus, containing equal number of texts from Male authors, Female Authors and Female authors writing under pen-names. 
 
 The MPF corpus allows us to draw broader and more generalizable conclusions about the writing styles of female authors while using pen-names, whereas the LMA corpus allows us to make more precise comparisons across an exhaustive corpus of an individual’s works. We have chosen Louisa May Alcott specifically for the said analysis, as she is one of the very few people to have published both under her real name and under the pseudonym of A.M Barnard - and we have included all her works available on Gutenberg to make an exhaustive analysis.
+
 
 The selection of documents in the MPF corpus wasn’t exhaustive; it was manually curated making subjective judgements. We have found famous authors writing in the same time-period (literary contemporaries) and have included the most popular works across their publications. We assume that the more popular works of the more popular authors in a time-period would be fairly representative of the general literary movement prevailing in the said period.
 
 ## Summary
 <iframe style='width: 849px; height: 331px;' src='https://voyant-tools.org/tool/Summary/?corpus=9b3fd06557e98d7160b857e130ec23ff' data-external = '1'></iframe>
 
-You can see the Voyant Skin above :)
+### Some observations:
+
+* The 2 books written by Alcott under her penname (AM Barnard) have an average word length of **36680**, whereas every other book she has written under her real name has an average length of **94660** words. 
+
+* Across all of Louisa May Alcott’s works, the 2 books written under a penname have the **lowest words per sentence** (17 and 19 respectively). This isn’t just a marginal difference. The average words per sentence for every other book she’s written (and is available on gutenberg) is ~26
+
+## Frequency Comparison
+### Corpus
+### Individual words or word clusters
+
+## Collocation/Correlation
+### Corpus
+### Specific words/clusters
+
+## Third Tool
+### Explanation, Motivation 
+
+The tool I chose was ‘Mandala’. Mandala visually depicts the frequency of a particular word in the chosen texts. The term(s) which the user enters surround the inner periphery of the Mandala and the texts are connected to the terms with different colored lines. The closer to the word the text lies, the more is the frequency of that word in the text. I chose this tool specifically because of how clear and direct the comparison between texts in relation to certain terms was presented.
+The visual representation was easy to grasp, and the data is presented in a very direct way and is visually appealing as well which makes it pleasant to use. 
+
+It helped my analysis as this tool makes it easy to determine relationships between the words and the texts. For instance, in my corpus, I wanted to see the role familial relationships played in each text. Rather than doing a MicroSearch where I would have to search each individual word separately in each of the texts, here I was able to compare the relation of multiple words with each of the texts. This saved me a lot of time and energy. 
+
+### Result
+
+#### Familial Relationships
+
+For the first Mandala, I analysed familial relationships (such as mother, father, brother, sister, husband, wife, son, daughter) to see how frequencies of certain relationships differed between male authors, female authors and authors who wrote under pen name (who I refer to as pen authors). My main motivation for choosing this was to see the difference between the representation of male and female figures in all these texts. The terminology I used for all 3 mandalas was: Pen authors (P), Female authors (F) and Male authors (M)
+
+* The mention of children (son/daughter) was much lesser for P as compared to the other two.
+
+* Prominence of adult male figures (excluding ‘father’) was much higher for P as compared to the other two. Father was mentioned most for M.
+
+* Although P used ‘wife’ much more as compared to F, yet the prominence of other female figures was identical for both.
+
+
+#### Family-Friendliness of Content
+
+For the second Mandala, I analysed which texts were more “homely” or for a better word, family oriented. I chose words such as job, work, family, home. I wanted to see which texts had more of an emphasis on family. My main motivation here was to see if the emphasis on family/home differed between pen authors and female authors and the same for job/work with pen authors and male authors.
+
+* Work/job was mentioned most for M, then P, lastly F.
+
+* Although ‘home’ was mentioned most for F, yet ‘family’ was mentioned most for P. 
+
+## Conclusion
+
+## Reflection
+
