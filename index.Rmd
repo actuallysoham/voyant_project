@@ -1,5 +1,5 @@
 ---
-title: "Effect of Pseudonyms on Writing Styles"
+title: "Effect of Pseudonyms on Writing Style"
 author: "Ananya Jain (GL), Ashita Kumar and Soham De"
 date: "19/9/2021"
 output: html_document
@@ -9,7 +9,9 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Research hypothesis
+> **Research hypothesis: ** If women when writing under male pen-names adopt a different writing style then the said difference should reflect in a statistical analysis of such texts.
+
+![](Alcott.jpeg)
 
 
 ## Corpus Description
@@ -36,7 +38,28 @@ The selection of documents in the MPF corpus wasn’t exhaustive; it was manuall
 
 ## Frequency Comparison
 ### Corpus
+
+2 main corpora were used in this analysis. They were:
+
+* [**LMA**] - Exhaustive Collection of all of Louisa May Alcott’s Work available on <a href="http://www.gutenberg.org/" target="_blank"> Gutenberg </a> including works written under the pseudonym of ‘A.M Barnard’
+
+* [**MPF**] - The Male-Pen-Female corpus, containing equal number of texts from Male authors, Female Authors and Female authors writing under pen-names.
+
 ### Individual words or word clusters
+
+We have used frequency analysis as a way to identify broader themes/ topics accross authors in the mid 19th Century. To that end, we have tested the following word clusters as proxy for prevalent themes in 19th C literature (<a href="https://core.ac.uk/download/pdf/17272103.pdf" target="_blank"> Significant Themes in 19th-Century Literature, Jockers et al, 2012 </a>)
+
+* **Female Fashion:** dress|gown|silk|lace|muslin|ribbon|hair|satin|shawl|robe|scarf|folds|constume|colour|attire|gold|fashion
+
+* **Enmity/Rivalry:** enemy|men|troop|cavalry|
+
+* **Alcohol:** alcohol|beer|whisky|drunk|tipsy|
+
+* **Flowers/Nature:** flower|beauty|nature|garden|grass|green|petal
+
+* **Gun/Arms:** fire|blood|gun|bullet|shoot|knife|kill|dead
+
+* **Money:** money|lend|pay|donate|steal|cash|income|spend|earn
 
 ## Collocation/Correlation
 ### Corpus
