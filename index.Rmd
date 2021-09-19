@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-> **Research hypothesis: ** If women when writing under male pen-names adopt a different writing style then the said difference should reflect in a statistical analysis of such texts.
+> **Research hypothesis: ** There is a statistical difference in the way gender and relationships are represented when women write under male pseudonyms as opposed to when they do not.
 
 ![](Alcott.jpeg)
 
@@ -22,10 +22,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 * [**MPF**] - The Male-Pen-Female corpus, containing equal number of texts from Male authors, Female Authors and Female authors writing under pen-names. 
 
-The MPF corpus allows us to draw broader and more generalizable conclusions about the writing styles of female authors while using pen-names, whereas the LMA corpus allows us to make more precise comparisons across an exhaustive corpus of an individual’s works. We have chosen Louisa May Alcott specifically for the said analysis, as she is one of the very few people to have published both under her real name and under the pseudonym of A.M Barnard - and we have included all her works available on Gutenberg to make an exhaustive analysis.
+
+The **MPF** corpus allows us to draw broader and more generalizable conclusions about the writing styles of female authors while using pen-names, whereas the **LMA** corpus allows us to make more precise comparisons across an exhaustive corpus of an individual’s works. We have chosen Louisa May Alcott specifically for the said analysis, as she is one of the very few people to have published both under her real name and under the pseudonym of A.M Barnard - and we have included all her works available on Gutenberg to make an exhaustive analysis.
 
 
-The selection of documents in the MPF corpus wasn’t exhaustive; it was manually curated making subjective judgements. We have found famous authors writing in the same time-period (literary contemporaries) and have included the most popular works across their publications. We assume that the more popular works of the more popular authors in a time-period would be fairly representative of the general literary movement prevailing in the said period.
+The selection of documents in the **MPF** corpus wasn’t exhaustive; it was manually curated making subjective judgements. We have found famous authors writing in the same time-period (literary contemporaries) and have included the most popular works across their publications. We assume that the more popular works of the more popular authors in a time-period would be fairly representative of the general literary movement prevailing in the said period.
 
 ## Summary
 <iframe style='width: 849px; height: 331px;' src='https://voyant-tools.org/tool/Summary/?corpus=9b3fd06557e98d7160b857e130ec23ff' data-external = '1'></iframe>
@@ -35,6 +36,11 @@ The selection of documents in the MPF corpus wasn’t exhaustive; it was manuall
 * The 2 books written by Alcott under her penname (AM Barnard) have an average word length of **36680**, whereas every other book she has written under her real name has an average length of **94660** words. 
 
 * Across all of Louisa May Alcott’s works, the 2 books written under a penname have the **lowest words per sentence** (17 and 19 respectively). This isn’t just a marginal difference. The average words per sentence for every other book she’s written (and is available on gutenberg) is ~26
+
+* The **vocabulary density** is significantly higher for the works written under her pseudonym (0.12) as compared to (0.090) across all her other works. Infact, if we exclude Hospital Sketches, the average vocabulary density is (0.078).
+
+* Across the **MPF** corpora, we observe that texts written by male authors (in our corpus) are typically longer than their female counterparts. There is no obvious difference in vocabulary density although women tend to typically have more words per sentence than their male counterparts. Women writing under pen-names typically seem to fall in the middle of the spectrum. 
+
 
 <iframe style='width: 849px; height: 333px;' src='https://voyant-tools.org/tool/Summary/?corpus=432ce73d9b4d42a9a330c06e8b8e6f88'  data-external = '1'></iframe>
 
@@ -64,31 +70,127 @@ We have used frequency analysis as a way to identify broader themes/ topics accr
 
 * **Money:** money|lend|pay|donate|steal|cash|income|spend|earn
 
+<iframe style='width: 849px; height: 331px;' src='https://voyant-tools.org/tool/CorpusTerms/?query=money%7Clend%7Cpay%7Cdonate%7Csteal%7Ccash%7Cincome%7Cspend%7Cearn*&query=fire%7Cblood%7Cgun%7Cbullet%7Cshoot%7Cknife%7Ckill%7Cdead*&query=flower%7Cbeauty%7Cnature%7Cgarden%7Cgrass%7Cgreen%7Cpetal*&query=alcohol%7Cbeer%7Cwhisky%7Cdrunk%7Ctipsy*&query=enemy%7Cmen%7Ctroop%7Ccavalry*&query=dress%7Cgown%7Csilk%7Clace%7Cmuslin%7Cribbon%7Chair%7Csatin%7Cshawl%7Crobe%7Cscarf%7Cfolds%7Cconstume%7Ccolour%7Cattire%7Cgold%7Cfashion*&corpus=4da485b2523bebfe1ee9d7bfb58eb964' data-external = '1'></iframe>
+<iframe style='width: 849px; height: 331px;' src='https://voyant-tools.org/tool/CorpusTerms/?query=money%7Clend%7Cpay%7Cdonate%7Csteal%7Ccash%7Cincome%7Cspend%7Cearn*&query=fire%7Cblood%7Cgun%7Cbullet%7Cshoot%7Cknife%7Ckill%7Cdead*&query=flower%7Cbeauty%7Cnature%7Cgarden%7Cgrass%7Cgreen%7Cpetal*&query=alcohol%7Cbeer%7Cwhisky%7Cdrunk%7Ctipsy*&query=enemy%7Cmen%7Ctroop%7Ccavalry*&query=dress%7Cgown%7Csilk%7Clace%7Cmuslin%7Cribbon%7Chair%7Csatin%7Cshawl%7Crobe%7Cscarf%7Cfolds%7Cconstume%7Ccolour%7Cattire%7Cgold%7Cfashion*&corpus=bf916ca361df84c3ac83fbefa84adcb2' data-external = '1'></iframe>
+<iframe style='width: 849px; height: 331px;' src='https://voyant-tools.org/tool/CorpusTerms/?query=money%7Clend%7Cpay%7Cdonate%7Csteal%7Ccash%7Cincome%7Cspend%7Cearn*&query=fire%7Cblood%7Cgun%7Cbullet%7Cshoot%7Cknife%7Ckill%7Cdead*&query=flower%7Cbeauty%7Cnature%7Cgarden%7Cgrass%7Cgreen%7Cpetal*&query=alcohol%7Cbeer%7Cwhisky%7Cdrunk%7Ctipsy*&query=enemy%7Cmen%7Ctroop%7Ccavalry*&query=dress%7Cgown%7Csilk%7Clace%7Cmuslin%7Cribbon%7Chair%7Csatin%7Cshawl%7Crobe%7Cscarf%7Cfolds%7Cconstume%7Ccolour%7Cattire%7Cgold%7Cfashion*&corpus=692615cb87dc138ec3a018273af764d0' data-external = '1'></iframe>
+<iframe style='width: 849px; height: 331px;' src='https://voyant-tools.org/tool/CorpusTerms/?query=money%7Clend%7Cpay%7Cdonate%7Csteal%7Ccash%7Cincome%7Cspend%7Cearn*&query=fire%7Cblood%7Cgun%7Cbullet%7Cshoot%7Cknife%7Ckill%7Cdead*&query=flower%7Cbeauty%7Cnature%7Cgarden%7Cgrass%7Cgreen%7Cpetal*&query=alcohol%7Cbeer%7Cwhisky%7Cdrunk%7Ctipsy*&query=enemy%7Cmen%7Ctroop%7Ccavalry*&query=dress%7Cgown%7Csilk%7Clace%7Cmuslin%7Cribbon%7Chair%7Csatin%7Cshawl%7Crobe%7Cscarf%7Cfolds%7Cconstume%7Ccolour%7Cattire%7Cgold%7Cfashion*&corpus=f5364c243df6245eb90276a0bf6be58b' data-external = '1'></iframe>
+<iframe style='width: 849px; height: 331px;' src='https://voyant-tools.org/tool/CorpusTerms/?query=money%7Clend%7Cpay%7Cdonate%7Csteal%7Ccash%7Cincome%7Cspend%7Cearn*&query=fire%7Cblood%7Cgun%7Cbullet%7Cshoot%7Cknife%7Ckill%7Cdead*&query=flower%7Cbeauty%7Cnature%7Cgarden%7Cgrass%7Cgreen%7Cpetal*&query=alcohol%7Cbeer%7Cwhisky%7Cdrunk%7Ctipsy*&query=enemy%7Cmen%7Ctroop%7Ccavalry*&query=dress%7Cgown%7Csilk%7Clace%7Cmuslin%7Cribbon%7Chair%7Csatin%7Cshawl%7Crobe%7Cscarf%7Cfolds%7Cconstume%7Ccolour%7Cattire%7Cgold%7Cfashion*&corpus=eded1de6fbd824443d271e1958bb1e09' data-external = '1'></iframe>
+
+Jocker establishes some of these topics as more ‘masculine’ than others. We see a similar trend in our corpus. Consistent with our hypothesis, we see that for a subset of such topics, females writing under male pseudonyms have engaged with them much more than those writing under their real names.  These include:
+
+* **Money** (M: 758 P: 606  F: 354)
+
+* **Guns/Arms** (M: 1420 P: 453  F: 360)
+
+This, however, isn’t a trend across all the topics we tested. As a counterexample, topics such as **Alcohol** and **Enmity/Rivalry** are still far more popular among male authors, as compared to female authors writing both under real and pen names. 
+
+We find more promising results on the LMA corpus, where occurrences of established feminine topics, such as Flower/Nature and Female Fashion have dropped significantly (by more than half) when May Alcott assumes her male pseudonym. 
+
+
 ## Collocation/Correlation
 ### Corpus
+
+Looking at the collocates chart for the entire corpora containing male authors and female authors writing under both real names and pseudonyms, the words which dominate the count are : *mr*, *man*, several *male character names*, with a sprinkling of *female characters*. Among familial relations, *father* shows up first in the collocate count followed by *mother*. Looking further across the chart it is generally seen that the word *little* is often collocated with *child*, *girl* and some *female characters* (for eg. *little marie*), however only rarely for male characters except for phrases like *little man*.  
+
+The overwhelming sense that one can get by purely looking at the collocates chart is of a patriarchal society, and largely that of a space dominated by men. Juxtaposing words like *little* with *girl* and other female characters lends a patronising and condescending tone to them, while also reaffirming that the tone of the corpora, which represents mid-19th century literature, as one dominated by the male narrative.
+
 ### Specific words/clusters
 
 By drilling-down on the corpora, we want to look at the words which are most collocated with male and female characters and familial relations. For looking at collocations with actors, we clubbed the male characters as well as female characters of the works by men, women and authors who wrote under a pen name.
 
-**Men corpus characters:**
+#### Male authors’ Corpus:
+
 marius|jean|valjean|defarge|stryver|raskolnikov|razumihin|queequeg|stubb|ahab|manette|sydney carton|Man|mr|boy|son|monsieur|sir|husband|brother|father*
 
-<iframe style='width: 452px; height: 342px;' src='https://voyant-tools.org/tool/CorpusCollocates/?query=marius%7Cjean%7Cvaljean%7Cdefarge%7Cstryver%7Craskolnikov%7Crazumihin%7Cqueequeg%7Cstubb%7Cahab%7Cmanette%7Csydney%20carton%7CMan%7Cmr%7Cboy%7Cson%7Cmonsieur%7Csir%7Chusband%7Cbrother%7Cfather*&corpus=648dca56526bec7d4cff7ba5e70acf85'   data-external = '1'></iframe>
+<iframe style='width: 452px; height: 342px;' src='https://voyant-tools.org/tool/CorpusCollocates/?query=marius%7Cjean%7Cvaljean%7Cdefarge%7Cstryver%7Craskolnikov%7Crazumihin%7Cqueequeg%7Cstubb%7Cahab%7Cmanette%7Csydney%20carton%7CMan%7Cmr%7Cboy%7Cson%7Cmonsieur%7Csir%7Chusband%7Cbrother%7Cfather*&corpus=648dca56526bec7d4cff7ba5e70acf85' data-external = '1'></iframe>
+
+sonia|cosette|pross|governess|madaleine|madame|girl|woman|daughter|mrs|ms|wife|sister|mother*
+
+<iframe style='width: 452px; height: 342px;' src='https://voyant-tools.org/tool/CorpusCollocates/?query=sonia%7Ccosette%7Cpross%7Cgoverness%7Cmadaleine%7Cmadame%7Cgirl%7Cwoman%7Cdaughter%7Cmrs%7Cms%7Cwife%7Csister%7Cmother*&corpus=648dca56526bec7d4cff7ba5e70acf85' data-external = '1'></iframe>
+
+-The commonalities between the two clusters are that both sets of characters are at first collocated with other male characters across the corpus. For the former set of characters (male), this collocation is larger in quantity and is longer in the chart. 
+
+-The differences between the two clusters show that the latter set of characters (female), is collocated with familial relations like ‘mother’, ‘father’ as well as ‘child’ much earlier than with male characters. While male characters also get collocated with these familial relations, they arrive much later in the chart, however with a higher frequency. Although looking at this frequency in relative rather than absolute terms, we can derive that female characters (with significantly less representation than male characters) are relatively associated more with these relations than men.
 
 
-## Third Tool
+#### Pen-name authors’ corpus:
+
+Mr casaubon|mr casaubon’s|mr rochester|mr brooke|mr bulstrode|mr farebrother|mr lydgate|mr vincy|mr garth|mr ladislaw|mr hawley|mr featherstone|mr trumbull|mr brocklehurst|mr rivers|mr coventry|jean|ned|reed|germain|hemp|maurice|pierre|fred|Man|mr|boy|son|monsieur|sir|husband|brother|father*
+
+
+<iframe style='width: 452px; height: 342px;' src='https://voyant-tools.org/tool/CorpusCollocates/?query=Mr%20casaubon%7Cmr%20casaubon%E2%80%99s%7Cmr%20rochester%7Cmr%20brooke%7Cmr%20bulstrode%7Cmr%20farebrother%7Cmr%20lydgate%7Cmr%20vincy%7Cmr%20garth%7Cmr%20ladislaw%7Cmr%20hawley%7Cmr%20featherstone%7Cmr%20trumbull%7Cmr%20brocklehurst%7Cmr%20rivers%7Cmr%20coventry%7Cjean%7Cned%7Creed%7Cgermain%7Chemp%7Cmaurice%7Cpierre%7Cfred%7CMan%7Cmr%7Cboy%7Cson%7Cmonsieur%7Csir%7Chusband%7Cbrother%7Cfather*&corpus=0ec07affc33377f5316ed978860c39a7' data-external = '1'></iframe>
+
+
+Dorothea|rosamond|mrs fairfax|mrs garth’s|mrs garth|mrs cadwallader|mrs cadwallader’s|mrs casaubon|mrs casaubon’s||marie|celia|mrs bulstrode|mrs vincy|mrs lydgate|mrs waule|bella|lucia|jane|adèle|bessie| madame|girl| woman| daughter|mrs|ms|wife|sister|mother*
+
+
+
+<iframe style='width: 452px; height: 342px;' src='https://voyant-tools.org/tool/CorpusCollocates/?query=Dorothea%7Crosamond%7Cmrs%20fairfax%7Cmrs%20garth%E2%80%99s%7Cmrs%20garth%7Cmrs%20cadwallader%7Cmrs%20cadwallader%E2%80%99s%7Cmrs%20casaubon%7Cmrs%20casaubon%E2%80%99s%7C%7Cmarie%7Ccelia%7Cmrs%20bulstrode%7Cmrs%20vincy%7Cmrs%20lydgate%7Cmrs%20waule%7Cbella%7Clucia%7Cjane%7Cad%C3%A8le%7Cbessie%7C%20madame%7Cgirl%7C%20woman%7C%20daughter%7Cmrs%7Cms%7Cwife%7Csister%7Cmother*&corpus=0ec07affc33377f5316ed978860c39a7' data-external = '1'></iframe>
+
+A direct comparison of the 2 character clusters, did not yield discernible differences and didn’t add to our understanding of the difference in representation of both sets of characters (check appendix). We further narrowed down our cluster only to look at how familial relations are juxtaposed with other words in this corpus.
+
+Male familial relations:
+
+father*|brother*|son*|husband*
+
+<iframe style='width: 452px; height: 342px;' src='https://voyant-tools.org/tool/CorpusCollocates/?query=father*%7Cbrother*%7Cson*%7Chusband*&corpus=0ec07affc33377f5316ed978860c39a7' data-external = '1'></iframe>
+
+Female familial relations:
+
+Mother*|sister*|daughter*|wife*
+
+<iframe style='width: 452px; height: 342px;' src='https://voyant-tools.org/tool/CorpusCollocates/?query=Mother*%7Csister*%7Cdaughter*%7Cwife*&corpus=0ec07affc33377f5316ed978860c39a7' data-external = '1'></iframe>
+
+Higher collocations of the paternalistic family relations with ‘mother’ and ‘wife’ were seen, whereas for the maternalistic family relations, ‘husband’, ‘brother’ and ‘mother’ were seen. The emphasis on children and child was higher in both absolute and thus, relative terms for female characters.
+
+
+
+#### Women author’s corpus:
+
+Mr thornton|mr hale|mr darcy|mr bell|mr collins|mr bingley|mr lennox|mr bennet|mr wickham| dixon|Man|mr|boy|son|monsieur|sir|husband|brother|father*
+
+<iframe style='width: 452px; height: 343px;' src='https://voyant-tools.org/tool/CorpusCollocates/?query=Mr%20thornton%7Cmr%20hale%7Cmr%20darcy%7Cmr%20bell%7Cmr%20collins%7Cmr%20bingley%7Cmr%20lennox%7Cmr%20bennet%7Cmr%20wickham%7C%20dixon%7CMan%7Cmr%7Cboy%7Cson%7Cmonsieur%7Csir%7Chusband%7Cbrother%7Cfather*&corpus=5f0b4133133dc806c1cae945b2132d55' data-external = '1'></iframe>
+
+Mrs thornton|mrs bennet|mrs hale| mrs gardiner|margaret|edith|elizabeth|mrs shaw|minnie|castalia|princess|fairy|margery|madame|girl| woman| daughter*|mrs|ms|wife*|sister*|mother*
+
+<iframe style='width: 452px; height: 343px;' src='https://voyant-tools.org/tool/CorpusCollocates/?query=Mrs%20thornton%7Cmrs%20bennet%7Cmrs%20hale%7C%20mrs%20gardiner%7Cmargaret%7Cedith%7Celizabeth%7Cmrs%20shaw%7Cminnie%7Ccastalia%7Cprincess%7Cfairy%7Cmargery%7Cmadame%7Cgirl%7C%20woman%7C%20daughter*%7Cmrs%7Cms%7Cwife*%7Csister*%7Cmother*&corpus=5f0b4133133dc806c1cae945b2132d55' data-external = '1'></iframe>
+
+Similar to pen-name authors, character clusters were not effective in making a comparison in gender representation, and thus, we looked at the familial relations aspect.
+
+Male familial relations:
+
+father*|brother*|son*|husband*
+
+<iframe style='width: 452px; height: 343px;' src='https://voyant-tools.org/tool/CorpusCollocates/?query=father*%7Cbrother*%7Cson*%7Chusband&corpus=5f0b4133133dc806c1cae945b2132d55' data-external = '1'></iframe>
+
+
+Female familial relations:
+
+Mother*|sister*|daughter*|wife*
+
+<iframe style='width: 452px; height: 342px;' src='https://voyant-tools.org/tool/CorpusCollocates/?query=Mother*%7Csister*%7Cdaughter*%7Cwife*&corpus=5f0b4133133dc806c1cae945b2132d55' data-external = '1'></iframe>
+
+
+The commonality across the two clusters is that the role of ‘mother’ is prominent. The paternalistic familial relations saw the presence of other female figures like ‘sister’. For maternalisitic familial relations, ‘brother’ was seen most overwhelmingly. The emphasis on ‘child’ and ‘children’ was found for maternalistic relations, but not for paternalistic relations. The word ‘married’ was also collocated with women, but not with men in the collocates chart.
+
+
+
+
+## Third Tool (Mandala)
 ### Explanation, Motivation 
 
-The tool I chose was ‘Mandala’. Mandala visually depicts the frequency of a particular word in the chosen texts. The term(s) which the user enters surround the inner periphery of the Mandala and the texts are connected to the terms with different colored lines. The closer to the word the text lies, the more is the frequency of that word in the text. I chose this tool specifically because of how clear and direct the comparison between texts in relation to certain terms was presented.
-The visual representation was easy to grasp, and the data is presented in a very direct way and is visually appealing as well which makes it pleasant to use. 
+The third tool of our choice was the ‘Mandala’. Mandala visually depicts the frequency of a particular word in the chosen texts. The term(s) which the user enters surround the inner periphery of the Mandala and the texts are connected to the terms with different colored lines. The closer to the word the text lies, the more is the frequency of that word in the text. We chose this tool specifically because of how clear and direct the comparison between texts in relation to certain terms was presented.
 
-It helped my analysis as this tool makes it easy to determine relationships between the words and the texts. For instance, in my corpus, I wanted to see the role familial relationships played in each text. Rather than doing a MicroSearch where I would have to search each individual word separately in each of the texts, here I was able to compare the relation of multiple words with each of the texts. This saved me a lot of time and energy. 
+It helped our analysis as this tool makes it easy to determine relationships between the words and the texts. For instance, in the MPF corpus, we wanted to see the role familial relationships played in each text. Rather than doing a MicroSearch where we would have to search each individual word separately in each of the texts, here we were able to compare the relation of multiple words with each of the texts. 
+ 
 
 ### Result
 
 #### Familial Relationships
 
-For the first Mandala, I analysed familial relationships (such as mother, father, brother, sister, husband, wife, son, daughter) to see how frequencies of certain relationships differed between male authors, female authors and authors who wrote under pen name (who I refer to as pen authors). My main motivation for choosing this was to see the difference between the representation of male and female figures in all these texts. The terminology I used for all 3 mandalas was: Pen authors (P), Female authors (F) and Male authors (M)
+For the first Mandala, we analysed familial relationships to see how occurrences  of certain relationships differed between male authors, female authors and authors who wrote under pseudonyms (who we refer to as pen authors). Our main motivation for choosing this was to see the difference between the representation of male and female figures in all these texts. The terminology we used for all 3 mandalas was: Pen authors (P), Female authors (F) and Male authors (M)
+
+<iframe style='width: 100%; height: 800px;' src='https://voyant-tools.org/?panels=cirrus%2Creader%2Ctrends%2Csummary%2Ccontexts&corpus=ab95e8a3f33a3ea54a9380b8edbc212a' data-external = '1'></iframe>
 
 * The mention of children (son/daughter) was much lesser for P as compared to the other two.
 
@@ -97,9 +199,11 @@ For the first Mandala, I analysed familial relationships (such as mother, father
 * Although P used ‘wife’ much more as compared to F, yet the prominence of other female figures was identical for both.
 
 
-#### Family-Friendliness of Content
+#### Family-Orientedness of Content
 
-For the second Mandala, I analysed which texts were more “homely” or for a better word, family oriented. I chose words such as job, work, family, home. I wanted to see which texts had more of an emphasis on family. My main motivation here was to see if the emphasis on family/home differed between pen authors and female authors and the same for job/work with pen authors and male authors.
+For the second Mandala,we analysed which texts were more “homely” or for a better word, family oriented.We wanted to see which texts had more of an emphasis on family. 
+
+<iframe style='width: 100%; height: 800px;' src='https://voyant-tools.org/tool/Mandala/?query=home*%7Chome&query=work*%7Cwork%7Cjob*%7Cjob&query=family*%7Cfamily&corpus=ab95e8a3f33a3ea54a9380b8edbc212a' data-external = '1'></iframe>
 
 * Work/job was mentioned most for M, then P, lastly F.
 
@@ -107,5 +211,85 @@ For the second Mandala, I analysed which texts were more “homely” or for a b
 
 ## Conclusion
 
+Over the years, many female authors have adopted male (or gender-ambiguous) pseudonyms to publish without prejudice in male-dominated literary circles, encourage male readership, and reach new audiences, among many other reasons. In this short analysis, we intend to bring out differences in both the style and content of such texts published under pseudonyms, with a focus on 19th century English literature.
+
+First, on comparing all three, the term ‘mother’ was used similarly for all. The terms ‘husband’ and ‘brother’ were mentioned most for pen name authors. The main finding was the emphasis on adult male figures, with the exclusion of the term ‘father’, when it came to pen name authors
+
+On comparing male authors and pen name authors, the only place where the difference between relations was significant for them was for ‘father’. Close similarities were found for the terms ‘wife’, ‘work/job’ and ‘home’.  
+
+On comparing female authors and pen name authors, we found similarities for the terms ‘father’ and ‘sister’. A surprising find was that although ‘home’ was mentioned most for female authors, the term ‘family’ was mentioned most for pen name authors. Another difference was how the terms ‘work/job’ were more prominent for pen name authors comparatively. Also, a significant difference was seen in the emphasis on children and marriage for female authors. 
+
+These findings grounded a patriarchal notion which the female authors can be seen following while females who wrote under pen names avoided mostly. 
+
 ## Reflection
+
+Any analysis using Voyant and Gutenberg has the limitation of being oversimplified and myopic. 
+Voyant as a tool itself has its limitations - an obvious one being the bag-of-words approach in its analysis. We feel that such an approach abstracts away much of the semantic information from the texts. This limits our ability to model topics and word relations using more sophisticated techniques.
+In our case, as we were focusing on pen name authors, we realised that the number of books available were much lower as compared to the other two categories. The number was even lower for pen name authors who had also written under their real names. Due to this, as we wanted to take an equal amount of books from all 3, the corpus size was too small to draw any meaningful conclusions from. For the male and female contemporaries, we focused on their most popular books on Gutenberg and hence, there is a fair amount of variation in the book lengths.
+
+While analysing character clusters for the collocates/correlation tool, we found that the male-to-female character ratio was extremely high for male authors. This disparity reduced for both pen and female authors. This difference in representation of characters skews the analysis if purely looked at in absolute terms, and thus a sound analysis requires one to look at comparisons in relative terms.
+
+
+## Appendix 
+
+### (A) Corpus Composition
+#### MPF Corpus
+
+**Male Authors :**
+
+* M1 - Crime and Punishment, by Fyodor Dostoevsky 
+
+* M2 -  Les Misérables, by Victor Hugo
+
+* M3 - A Tale of Two Cities, by Charles Dickens
+
+* M4 -  Moby-Dick; or The Whale, by Herman Melville
+
+**Female Authors :**
+
+* F1 -  North and South, by Elizabeth Gaskell
+
+* F2 - Monday or Tuesday, by Virginia Woolf
+
+* F3 - The Fairy Book, by Dinah Maria Mulock
+
+* F4 - Pride and Prejudice, by Jane Austen
+
+**Female under pen name Authors :**
+
+* P1 - Jane Eyre, by Charlotte Brontë (published initially as Currer Bell)
+
+* P2 - Middlemarch, by George Eliot (Mary Ann Evans)
+
+* P3 - The Devil's Pool, by George Sand (Amantine Lucile Aurore Dupin)
+
+* P4 - Behind A Mask, Or A Woman’s Power, by A. M. Barnard (Louisa May Alcott)
+
+#### LMA Corpus
+
+**Under her real name (Louisa May Alcott):**
+
+* Flower Fables (1854)
+
+* Hospital Sketches (1863)
+
+* An Old Fashioned Girl (1869)
+
+* Little Women (1869)
+
+* Little Men (1871)
+
+* Eight Cousins (1875)
+
+* Rose in Bloom (1876)
+
+* Jack and Jill (1880)
+
+* Jo’s Boys (1886)
+
+**Under her pseudonym (A.M. Barnard):**
+
+* Behind a Mask (1866)
+* The Abbot’s Ghost (1867)
+
 
